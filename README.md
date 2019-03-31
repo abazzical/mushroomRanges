@@ -2,7 +2,7 @@
 
 I wrote these scripts to calculate the range extent of mushroom OTUs. 
 This means that they take the geolocation of a group of specimens, calculate the distance between all pairs, and spit out the largest distance.
-I have included example files to run the scripts.
+I have included example files to run the scripts. 
 
 Python packages used:
 geopy
@@ -36,7 +36,6 @@ outputs 3 files, the .csv file is the one with the range extents.
 
 For this analysis I wanted to permute and randomize the data. So each of the samples was re-assigned a coordinate randomly from two pools of coordinates.
 
-
 To get permutations/randomizations:
 For my analysis I used two pools, one with the same coordinates as the original file AmanitaStart.txt, one with coordinates from all countries of the world.
 But you should use what you think is appropriate.
@@ -57,13 +56,18 @@ AmanitaMaxdist4loop2.py
 
 outputs 3 files per set, .csv are the contain the range extents (again, the other files are uggos).
 
+
 (iii)
-other scripts for things include: remove singleton OTUs (cleanDataafterRandom.py), how many samples are there in an OTU? (countSamplesInOTU.py), count singletons (countSinglesDataafterRandom.py)
+other scripts related to the range extents include: remove singleton OTUs (cleanDataafterRandom.py), how many samples are there in an OTU? (countSamplesInOTU.py), count singletons (countSinglesDataafterRandom.py)
 
 The input files are using data from the UNITE fungal database:
 Abarenkov, K., Nilsson, R.H., Larsson, K.H., Alexander, I.J., Eberhardt, U., Erland, S., Høiland, K., Kjøller, R., Larsson, E., & Pennanen, T. 2010. The UNITE database for molecular identification of fungi–recent updates and future perspectives. New Phytol. 186:281-285.
 Kõljalg, U., Larsson, K.H., Abarenkov, K., Nilsson, R.H., Alexander, I.J., Eberhardt, U., Erland, S., Høiland, K., Kjøller, R., & Larsson, E. 2005. UNITE: a database providing web‐based methods for the molecular identification of ectomycorrhizal fungi. New Phytol. 166:1063-1068.
 
 
-How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. These scripts don't do anything particularly fancy, they are here for the sake of transparency and while I tried to make them understandable, I was not writing them as a tool for general use. Get in touch if you would like more information about the analysis.
+(iv) For the analysis I also calculated the average genetic distances of samples in an OTU based on their ITS sequence. The input file for this script includes the sequence in one of the columns, there is an example of the host tree data 'bySHGenHost.txt'. This script requires mafft installed, packages collections, cogent, and numpy.
+This script makes a fasta file based on the grouping of your choice, passes it through mafft to get an alignment, then gets a distance matrix, then parses through the distance matrix to get the average. It outputs everything in a csv file.
+
+
+How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. These scripts don't do anything particularly fancy, they are here for the sake of transparency and while I tried to make them reasonably understandable, I was not writing them as a tool for general use. If you intend to use the scripts on your files, you'll have to change them so that they call your file. Get in touch if you would like more information about the analysis.
 
