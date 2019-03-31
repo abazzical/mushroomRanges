@@ -65,5 +65,5 @@ Abarenkov, K., Nilsson, R.H., Larsson, K.H., Alexander, I.J., Eberhardt, U., Erl
 Kõljalg, U., Larsson, K.H., Abarenkov, K., Nilsson, R.H., Alexander, I.J., Eberhardt, U., Erland, S., Høiland, K., Kjøller, R., & Larsson, E. 2005. UNITE: a database providing web‐based methods for the molecular identification of ectomycorrhizal fungi. New Phytol. 166:1063-1068.
 
 
-How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. They are here for the sake of transparency and while I tried to make them understandable, I was not writing them as a tool for general use. Get in touch if you would like more information about the analysis, and you can also read the paper here:
+How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. These scripts don't do anything particularly fancy, they are here for the sake of transparency and while I tried to make them understandable, I was not writing them as a tool for general use. Get in touch if you would like more information about the analysis.
 
