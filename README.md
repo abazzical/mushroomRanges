@@ -36,12 +36,11 @@ It outputs 3 files, the .csv file is the one with the range extents.
 For this analysis I wanted to permute and randomize the data. So each of the samples was re-assigned a coordinate randomly from two pools of coordinates.
 
 To get permutations/randomizations:
-For my analysis I used two 'pools'. From one I randomly sampled from the same coordinates as the original file 'AmanitaStart.txt'. The second one samples from coordinates from all countries of the world.
+For my analysis I used two 'pools'. From one I randomly sampled from the same coordinates as the original file 'AmanitaStart.txt'. The second one samples from coordinates from all countries of the world. 
 Permutation 'AmanitaPool.txt'
 Randomization 'CountryPool.txt'
 
-Script assigns to each sample a coordinate
-
+Script assigns to each sample a coordinate and outputs two sets one per pool.
 outputAmanitaP1.txt
 outputAmanitaP2.txt
 
