@@ -40,17 +40,16 @@ For my analysis I used two 'pools'. From one I randomly sampled from the same co
 Permutation 'AmanitaPool.txt'
 Randomization 'CountryPool.txt'
 
-Script assigns to each sample a coordinate and outputs two sets one per pool.
+Script 'randomizationAmanita.py' assigns to each sample a coordinate and outputs two sets one per pool.
 outputAmanitaP1.txt
 outputAmanitaP2.txt
 
-'AmanitaStart.txt' can include more columns with permutations or randomizations. See AmanitaStartRand.txt for format.
+'AmanitaStart.txt' can include more columns with permutations or randomizations. See 'AmanitaStartRand.txt' for format.
 
 Looks like this:
 Genus\t coordinates\t SH0\t SH1\t SH2\t SH3\t permutation1\t permutation2\t permutation3...
 
-Range extents of the observed data and the re-sampled data run:
-AmanitaMaxdist4loop2.py
+Range extents of the observed data and the re-sampled data run 'AmanitaMaxdist4loop2.py'
 
 Running it will output 3 files per set (column) of coordinates, .csv contains the range extents (again, the other files are uggos).
 
@@ -65,5 +64,5 @@ The input files are using data from the UNITE fungal database:
 Abarenkov, K., Nilsson, R.H., Larsson, K.H., Alexander, I.J., Eberhardt, U., Erland, S., Høiland, K., Kjøller, R., Larsson, E., & Pennanen, T. 2010. The UNITE database for molecular identification of fungi–recent updates and future perspectives. New Phytol. 186:281-285.
 Kõljalg, U., Larsson, K.H., Abarenkov, K., Nilsson, R.H., Alexander, I.J., Eberhardt, U., Erland, S., Høiland, K., Kjøller, R., & Larsson, E. 2005. UNITE: a database providing web‐based methods for the molecular identification of ectomycorrhizal fungi. New Phytol. 166:1063-1068.
 
-How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. These scripts don't do anything particularly fancy, they are here for the sake of transparency and while I tried to make them reasonably understandable, I was not writing them as a tool for general use. If you intend to use the scripts on your files, you'll have to change them so that they call your file. Get in touch if you would like more information about the analysis.
+How unlikely that you would read until the end! If you looked at the scripts, you can guess from the clumsy code that I am not a computer scientist. These scripts don't do anything particularly fancy, they are here for the sake of transparency and while I tried to make them reasonably understandable, I was not writing them as a tool for general use. If you intend to use the scripts on your files, please change them so that they will work for your files. Get in touch if you would like more information about the analysis.
 
